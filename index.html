@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Formularios
+        </h1>
+    </header>
+    <section>
+        <form action="https://formspree.io/xnqoqobk" method="POST" target="_blank">
+            <label>
+                Nombre
+                <input name="nombre" type="text"><!--El 'name' debe estar relacionado a lo que dice el 'label'-->
+            </label>
+            <br><br>
+            <label>
+                Comentarios
+                <textarea cols="50" name="comentarios" rows="5">
+                </textarea>
+            </label>
+            <br><br>            
+            <label>
+                Seleccionar
+                <select>
+                    <option>Uno</option>
+                    <option>Dos</option>
+                    <option>Tres</option>
+                </select>
+            </label>
+            <br><br><br>
+            <input name="submit" type="submit">
+            <input name="reset" type="reset">
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <fieldset>
+                <legend>
+                    Datos Personales
+                </legend>
+                <label>
+                    Nombre
+                    <input name="nombre" type="text" required>
+                </label>
+                <br><br>
+                <label>
+                    Apellido
+                    <input name="apellido" type="text">
+                </label>
+                <br><br>
+                <label>
+                    Correo electrónico
+                    <input name="email" placeholder="xxx@xxx.com" type="email">
+                </label>
+                <br><br>
+                <label>
+                    Contraseña
+                    <input name="password" type="password">
+                </label>
+                <br><br><br>
+                <label>
+                    Femenino
+                    <input name="genero" type="radio">
+                </label>
+                <br>
+                <label>
+                    Masculino
+                    <input name="genero" type="radio">
+                </label>
+                <br>
+                <label>
+                    Otro
+                    <input name="genero" type="radio">
+                </label>
+                    <br><br>
+                <label>
+                    Opción 1
+                    <input name="opcion"  type="checkbox">
+                </label>
+                <br>
+                <label>
+                    Opción 2
+                    <input name="opcion"  type="checkbox">
+                </label>
+                <br>
+                <label>
+                    Opción 3
+                    <input name="opcion"  type="checkbox">
+                </label>
+                <label>
+                    <br><br>
+                    Cantidad
+                    <input name="cantidad" type="number">
+                </label>
+                <br><br>
+                <label>
+                    Fecha de nacimiento
+                    <input name="fecha" type="date">
+                </label>
+                <br><br>
+                <label>
+                    Semana
+                    <input name="semana" type="week">
+                </label>
+                <br><br>
+                <label>
+                    Link
+                    <input name="link" type="url">
+                </label>
+                <br><br>
+                <label>
+                    Seleccionar archivo
+                    <input name="archivo"  type="file">
+                </label>
+                <br><br>
+                <label>
+                    Rango
+                    <input max="90" min="5" name="rango" type="range">
+                </label>
+                <br><br>
+                <label>
+                    Hora:
+                    <input name="hora" type="time">
+                </label>
+                <br><br>
+                <label>
+                    Color:
+                    <input name="color" type="color">
+                </label>
+
+
+
+                    <br><br><br>
+
+                <input name="submit" type="submit" value="enviar formulario">
+            </fieldset>
+            <br>
+            <br>
+            <br>
+            <br>
+        </form>
+    </section>
+    
+    <!--https://formspree.io/
+    El link que otorga ese sitio web se pegó en 'action' del 'form'. Luego los datos que vas generando, se envían al email con el que te registraste.
+Cuando el input está dentro del label, ya no es necesario usar el atributo 'for' ni 'íd', dado que ya están relacionados-->
+</body>
+</html>
